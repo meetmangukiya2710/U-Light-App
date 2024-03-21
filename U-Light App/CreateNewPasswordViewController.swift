@@ -27,13 +27,25 @@ class CreateNewPasswordViewController: UIViewController {
     @IBAction func createNewPasswordAction(_ sender: Any) {
         print(password)
         if oldPasswordOutlet.text == password {
-            if newPasswordOutlet.text == cNewPasswordOutlet.text {
-                DBHelper.updateData(password: password, newPassword: cNewPasswordOutlet.text ?? "")
-                successAlert()
-                DBHelper.getData()
+            if newPasswordOutlet.text == "" && cNewPasswordOutlet.text ==
+                "" {
+                alert(title: "Error!", message: "Enter the New Password && \n Conform Password")
+            }
+            else if newPasswordOutlet.text == "" {
+                alert(title: "Password Error!", message: "Enter the New Password")
+            }
+            else if cNewPasswordOutlet.text == "" {
+                alert(title: "Password Error!", message: "Enter the Conform Password")
             }
             else {
-                alert(title: "Error!", message: "Either Any One Password Is Wrong")
+                if newPasswordOutlet.text == cNewPasswordOutlet.text {
+                    DBHelper.updateData(password: password, newPassword: cNewPasswordOutlet.text ?? "")
+                    successAlert()
+                    DBHelper.getData()
+                }
+                else {
+                    alert(title: "Error!", message: "Either Any One Password Is Wrong")
+                }
             }
         }
         else {
