@@ -18,11 +18,13 @@ class RegistrationPageViewController: UIViewController {
     @IBOutlet weak var fstLabelOutlet: UIImageView!
     @IBOutlet weak var secLabelOutlet: UIImageView!
     @IBOutlet weak var thdLabelOutlet: UIImageView!
+    @IBOutlet weak var backButtonOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         design()
         DBHelper.createFile()
+        navigationItem.hidesBackButton = true
     }
     
     @IBAction func registrationButtonAction(_ sender: UIButton) {
@@ -67,6 +69,11 @@ class RegistrationPageViewController: UIViewController {
     }
     
     
+    @IBAction func backButtonAction(_ sender: Any) {
+        let navigate = storyboard?.instantiateViewController(withIdentifier: "StartViewController") as! StartViewController
+        
+        navigationController?.pushViewController(navigate, animated: true)
+    }
     
     func design() {
         registrationButtonOutlet.layer.cornerRadius = 8
@@ -84,6 +91,10 @@ class RegistrationPageViewController: UIViewController {
         thdLabelOutlet.layer.borderWidth = 1
         thdLabelOutlet.layer.cornerRadius = 8
         thdLabelOutlet.layer.borderColor = UIColor(.black).cgColor
+        
+        backButtonOutlet.layer.cornerRadius = 12
+        backButtonOutlet.layer.borderWidth = 1
+        backButtonOutlet.layer.borderColor = UIColor(.gray).cgColor
         
     }
     
