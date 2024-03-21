@@ -60,4 +60,13 @@ class DBHelper {
             }
         }
     }
+    
+    static func updateData(password: String, newPassword: String) {
+        let quary = "UPDATE UserData SET password = '\(newPassword)' WHERE password = '\(password)'"
+        var update: OpaquePointer?
+        sqlite3_prepare(file, quary, -1, &update, nil)
+        sqlite3_step(update)
+        print("Update Data")
+    }
+    
 }

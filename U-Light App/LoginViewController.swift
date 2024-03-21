@@ -10,6 +10,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     var array = [UserData]()
+    var count = 0
 
     @IBOutlet weak var emailOutlet: UITextField!
     @IBOutlet weak var passwordOutlet: UITextField!
@@ -17,12 +18,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var secLabelOutlet: UIImageView!
     @IBOutlet weak var thdLabelOutlet: UIImageView!
     @IBOutlet weak var backButtonOutlet: UIButton!
+    @IBOutlet weak var hidePasswordButtonOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         array = DBHelper.userDataArray
         DBHelper.getData()
         design()
+        navigationItem.hidesBackButton = true
+        passwordOutlet.isSecureTextEntry = true
+        
     }
     
     
@@ -72,7 +77,26 @@ class LoginViewController: UIViewController {
     @IBAction func backButtonAction(_ sender: Any) {
         let navigate = storyboard?.instantiateViewController(withIdentifier: "StartViewController") as! StartViewController
         
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func forgotPasswordButtonAction(_ sender: UIButton) {
+        let navigate = storyboard?.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as! ForgotPasswordViewController
+        
         navigationController?.pushViewController(navigate, animated: true)
+    }
+    
+    @IBAction func hidePasswordButtonAction(_ sender: Any) {
+        if count == 0 {
+            hidePasswordButtonOutlet.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+            passwordOutlet.isSecureTextEntry = true
+            count = 1
+        }
+        else {
+            hidePasswordButtonOutlet.setImage(UIImage(systemName: "eye"), for: .normal)
+            passwordOutlet.isSecureTextEntry = false
+            count = 0
+        }
     }
     
     func design() {

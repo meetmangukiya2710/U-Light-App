@@ -16,6 +16,8 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         design()
+        DBHelper.createFile()
+        navigationItem.hidesBackButton = true
     }
     
     func design() {

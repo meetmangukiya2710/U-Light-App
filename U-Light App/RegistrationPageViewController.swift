@@ -9,6 +9,7 @@ import UIKit
 
 class RegistrationPageViewController: UIViewController {
     
+    var a = 0
     
     @IBOutlet weak var userNameTFOutlet: UITextField!
     @IBOutlet weak var emailTFOutlet: UITextField!
@@ -19,12 +20,15 @@ class RegistrationPageViewController: UIViewController {
     @IBOutlet weak var secLabelOutlet: UIImageView!
     @IBOutlet weak var thdLabelOutlet: UIImageView!
     @IBOutlet weak var backButtonOutlet: UIButton!
+    @IBOutlet weak var hidePasswordButtonOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         design()
         DBHelper.createFile()
         navigationItem.hidesBackButton = true
+        passwordTFOutlet.isSecureTextEntry = true
+        cPasswordTFOutlet.isSecureTextEntry = true
     }
     
     @IBAction func registrationButtonAction(_ sender: UIButton) {
@@ -72,7 +76,22 @@ class RegistrationPageViewController: UIViewController {
     @IBAction func backButtonAction(_ sender: Any) {
         let navigate = storyboard?.instantiateViewController(withIdentifier: "StartViewController") as! StartViewController
         
-        navigationController?.pushViewController(navigate, animated: true)
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func hidePasswordButtonAction(_ sender: Any) {
+        if a == 0 {
+            hidePasswordButtonOutlet.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+            passwordTFOutlet.isSecureTextEntry = true
+            cPasswordTFOutlet.isSecureTextEntry = true
+            a = 1
+        }
+        else {
+            hidePasswordButtonOutlet.setImage(UIImage(systemName: "eye"), for: .normal)
+            passwordTFOutlet.isSecureTextEntry = false
+            cPasswordTFOutlet.isSecureTextEntry = false
+            a = 0
+        }
     }
     
     func design() {

@@ -20,6 +20,8 @@
 		BAACE9EE2B3AA5DB000B3823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAACE9ED2B3AA5DB000B3823 /* Assets.xcassets */; };
 		BAACE9F12B3AA5DB000B3823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAACE9EF2B3AA5DB000B3823 /* LaunchScreen.storyboard */; };
 		BAACE9F92B3AAD8C000B3823 /* NewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAACE9F82B3AAD8B000B3823 /* NewProductCollectionViewCell.swift */; };
+		BAE2C3112BAC1DB400C58259 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2C3102BAC1DB400C58259 /* ForgotPasswordViewController.swift */; };
+		BAE2C3132BAC1DE500C58259 /* CreateNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2C3122BAC1DE500C58259 /* CreateNewPasswordViewController.swift */; };
 		BAEE90612B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE90602B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift */; };
 		BAEE90632B3C093E0091FE1B /* ProDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE90622B3C093E0091FE1B /* ProDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		BAACE9F02B3AA5DB000B3823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAACE9F22B3AA5DB000B3823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAACE9F82B3AAD8B000B3823 /* NewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		BAE2C3102BAC1DB400C58259 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		BAE2C3122BAC1DE500C58259 /* CreateNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordViewController.swift; sourceTree = "<group>"; };
 		BAEE90602B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulerProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		BAEE90622B3C093E0091FE1B /* ProDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +90,8 @@
 				BA63D9A22BA859EB00865894 /* DBHelper.swift */,
 				BA63D99E2BA8514300865894 /* StartViewController.swift */,
 				BAACE9EA2B3AA5DA000B3823 /* Main.storyboard */,
+				BAE2C3102BAC1DB400C58259 /* ForgotPasswordViewController.swift */,
+				BAE2C3122BAC1DE500C58259 /* CreateNewPasswordViewController.swift */,
 				BA95D9C52B3D4F1700B7F60A /* LoginViewController.swift */,
 				BAACE9ED2B3AA5DB000B3823 /* Assets.xcassets */,
 				BAACE9EF2B3AA5DB000B3823 /* LaunchScreen.storyboard */,
@@ -175,7 +181,9 @@
 				BA63D9A32BA859EB00865894 /* DBHelper.swift in Sources */,
 				BA63D9A12BA8555900865894 /* RegistrationPageViewController.swift in Sources */,
 				BAACE9F92B3AAD8C000B3823 /* NewProductCollectionViewCell.swift in Sources */,
+				BAE2C3112BAC1DB400C58259 /* ForgotPasswordViewController.swift in Sources */,
 				BAEE90612B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift in Sources */,
+				BAE2C3132BAC1DE500C58259 /* CreateNewPasswordViewController.swift in Sources */,
 				BAEE90632B3C093E0091FE1B /* ProDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
