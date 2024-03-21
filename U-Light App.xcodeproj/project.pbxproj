@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA63D99F2BA8514300865894 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63D99E2BA8514300865894 /* StartViewController.swift */; };
+		BA63D9A12BA8555900865894 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63D9A02BA8555900865894 /* RegistrationPageViewController.swift */; };
+		BA63D9A32BA859EB00865894 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63D9A22BA859EB00865894 /* DBHelper.swift */; };
 		BA95D9C62B3D4F1700B7F60A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D9C52B3D4F1700B7F60A /* LoginViewController.swift */; };
 		BA95D9C82B3D515E00B7F60A /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D9C72B3D515E00B7F60A /* NewProductViewController.swift */; };
 		BA95D9CA2B3D554A00B7F60A /* PropularProsuctViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA95D9C92B3D554A00B7F60A /* PropularProsuctViewController.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA63D99E2BA8514300865894 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		BA63D9A02BA8555900865894 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
+		BA63D9A22BA859EB00865894 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		BA95D9C52B3D4F1700B7F60A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BA95D9C72B3D515E00B7F60A /* NewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
 		BA95D9C92B3D554A00B7F60A /* PropularProsuctViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropularProsuctViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +81,10 @@
 				BA95D9C92B3D554A00B7F60A /* PropularProsuctViewController.swift */,
 				BA95D9C72B3D515E00B7F60A /* NewProductViewController.swift */,
 				BAEE90622B3C093E0091FE1B /* ProDetailViewController.swift */,
+				BA63D9A02BA8555900865894 /* RegistrationPageViewController.swift */,
 				BAACE9F82B3AAD8B000B3823 /* NewProductCollectionViewCell.swift */,
+				BA63D9A22BA859EB00865894 /* DBHelper.swift */,
+				BA63D99E2BA8514300865894 /* StartViewController.swift */,
 				BAACE9EA2B3AA5DA000B3823 /* Main.storyboard */,
 				BA95D9C52B3D4F1700B7F60A /* LoginViewController.swift */,
 				BAACE9ED2B3AA5DB000B3823 /* Assets.xcassets */,
@@ -161,7 +170,10 @@
 				BAACE9E92B3AA5DA000B3823 /* ViewController.swift in Sources */,
 				BAACE9E52B3AA5DA000B3823 /* AppDelegate.swift in Sources */,
 				BA95D9C82B3D515E00B7F60A /* NewProductViewController.swift in Sources */,
+				BA63D99F2BA8514300865894 /* StartViewController.swift in Sources */,
 				BAACE9E72B3AA5DA000B3823 /* SceneDelegate.swift in Sources */,
+				BA63D9A32BA859EB00865894 /* DBHelper.swift in Sources */,
+				BA63D9A12BA8555900865894 /* RegistrationPageViewController.swift in Sources */,
 				BAACE9F92B3AAD8C000B3823 /* NewProductCollectionViewCell.swift in Sources */,
 				BAEE90612B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift in Sources */,
 				BAEE90632B3C093E0091FE1B /* ProDetailViewController.swift in Sources */,
