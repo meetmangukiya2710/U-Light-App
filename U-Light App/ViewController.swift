@@ -41,9 +41,9 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         if collectionView == NewProductOutlet {
             let NewProductCell = NewProductOutlet.dequeueReusableCell(withReuseIdentifier: "NewProductCell", for: indexPath) as! NewProductCollectionViewCell
         
-            NewProductCell.NewProdectImage.image = UIImage(named: Image[indexPath.row])
-            NewProductCell.NewProdectName.text = ProName[indexPath.row]
-            NewProductCell.NewProdectPrice.text = ProPrice[indexPath.row]
+            NewProductCell.newProdectImage.image = UIImage(named: Image[indexPath.row])
+            NewProductCell.newProdectName.text = ProName[indexPath.row]
+            NewProductCell.newProdectPrice.text = ProPrice[indexPath.row]
             
             return NewProductCell
         }else{
@@ -73,7 +73,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             let seclect1 = storyboard?.instantiateViewController(identifier: "PropularProsuctViewController") as! PropularProsuctViewController
 
             seclect1.Img1 = UIImage(named: Image1[indexPath.row])!
-            seclect1.label = ProName2[indexPath.row]
+            seclect1.label1 = ProName2[indexPath.row]
             
 
             self.navigationController?.pushViewController(seclect1, animated: true)

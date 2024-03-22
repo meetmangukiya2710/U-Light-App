@@ -9,7 +9,7 @@ import UIKit
 
 class CreateNewPasswordViewController: UIViewController {
 
-    var array = [UserData]()
+//    var array = [UserData]()
     var password = ""
     
     @IBOutlet weak var oldPasswordOutlet: UITextField!
@@ -20,7 +20,7 @@ class CreateNewPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        array = DBHelper.userDataArray
+//        array = DBHelper.userDataArray
         design()
     }
     

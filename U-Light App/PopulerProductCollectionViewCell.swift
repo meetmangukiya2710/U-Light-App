@@ -9,9 +9,7 @@ import UIKit
 
 class PopulerProductCollectionViewCell: UICollectionViewCell {
     
-    
     @IBOutlet weak var PropularProductImage: UIImageView!
-    
     
     @IBOutlet weak var PropularProductName: UILabel!
     

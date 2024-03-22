@@ -9,7 +9,6 @@ import UIKit
 
 class NewProductViewController: UIViewController {
 
-    
     @IBOutlet weak var NewProdect_Image: UIImageView!
     @IBOutlet weak var NewProduct_Name: UILabel!
     @IBOutlet weak var NewProduct_Price: UILabel!
@@ -25,6 +24,7 @@ class NewProductViewController: UIViewController {
         NewProdect_Image.image = Img
         NewProduct_Name.text = lab1
         NewProduct_Price.text = lab2
+        
         navigationItem.hidesBackButton = true
         design()
     }

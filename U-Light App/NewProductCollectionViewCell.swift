@@ -10,9 +10,11 @@ import UIKit
 class NewProductCollectionViewCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var NewProdectImage: UIImageView!
+    @IBOutlet weak var newProdectImage: UIImageView!
+    @IBOutlet weak var newProdectName: UILabel!
+    @IBOutlet weak var newProdectPrice: UILabel!
     
-    @IBOutlet weak var NewProdectName: UILabel!
-    
-    @IBOutlet weak var NewProdectPrice: UILabel!
+    @IBOutlet weak var newProdectImage1: UIImageView!
+    @IBOutlet weak var newProdectName1: UILabel!
+    @IBOutlet weak var newProdectPrice1: UILabel!
 }

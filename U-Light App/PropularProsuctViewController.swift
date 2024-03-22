@@ -10,18 +10,18 @@ import UIKit
 class PropularProsuctViewController: UIViewController {
     
     
-    @IBOutlet weak var PropularProduct_Image: UIImageView!
-    @IBOutlet weak var PropularProduct_Name: UILabel!
+    @IBOutlet weak var propularProduct_Image: UIImageView!
+    @IBOutlet weak var propularProduct_Name: UILabel!
     @IBOutlet weak var backButtonOutlet: UIButton!
     
     var Img1 = UIImage(named: "")
-    var label = ""
+    var label1 = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        PropularProduct_Image.image = Img1
-        PropularProduct_Name.text = label
+        propularProduct_Image.image = Img1
+        propularProduct_Name.text = label1
         navigationItem.hidesBackButton = true
         design()
     }
