@@ -13,17 +13,20 @@ class NewProductViewController: UIViewController {
     @IBOutlet weak var NewProduct_Name: UILabel!
     @IBOutlet weak var NewProduct_Price: UILabel!
     @IBOutlet weak var backButtonOutlet: UIButton!
+    @IBOutlet weak var total_Amount: UILabel!
+    @IBOutlet weak var stepperOutlet: UIStepper!
+    @IBOutlet weak var stepperLabelOutlet: UILabel!
     
     var Img = UIImage(named: "")
     var lab1 = ""
-    var lab2 = ""
+    var lab2 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         NewProdect_Image.image = Img
         NewProduct_Name.text = lab1
-        NewProduct_Price.text = lab2
+        NewProduct_Price.text = String(lab2)
         
         navigationItem.hidesBackButton = true
         design()
@@ -33,6 +36,11 @@ class NewProductViewController: UIViewController {
         let navigat = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
         
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func stepperAction(_ sender: Any) {
+        stepperLabelOutlet.text = String(Int(stepperOutlet.value))
+        total_Amount.text = String(Int(stepperOutlet.value) * Int(lab2))
     }
     
     

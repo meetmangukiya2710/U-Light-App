@@ -10,8 +10,10 @@ import UIKit
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var NewProductOutlet: UICollectionView!
-    
     @IBOutlet weak var PropularProductOutlet: UICollectionView!
+    @IBOutlet weak var lampProduct1Outlet: UIImageView!
+    @IBOutlet weak var lampProduct2Outlet: UIImageView!
+    @IBOutlet weak var lampProduct3Outlet: UIImageView!
     
     var Image = ["Product1","Product2","Product3","Product4","Product5","Product6","Product7","Product8","Product9"]
     
@@ -21,11 +23,11 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     var ProName2 = ["IMNISHNAY Tree Lamp for Baby Room Decor,Pearl LED Fairy Lights Spirit Tree,Bonsai Tree Light","ExclusiveLane Sheesham Wooden 'Pyramid' Table Lamp for Bedroom & Living Room","IMNISHNAY Table Lamp for Bedroom, Minimalist Bedside Table Lamps Night Light with USB Ports","Homesake Wall Light, Wall Lamp Wood Light for Home Decoration, Chandelier Home, Living Room, Indoor Outdoor","GLOWSERIE Led Desk Tree Lamp, Desk Table Decor 36 Pearl LED Lights","ELYZIA Tripping Indoor Outdoor Wall Lamps/Lights lamp led Light Shade/Curved Black","Decor & More - Bedside Lamp | Bed Lamps for Bedroom with On/Off Button | Table Lamps for Home Decoration","Zinnia Night Light for Bedroom, 3D Solar System Crystal Ball Night Lamp, LED Space Projection Table Lamp for Home Decoration & Living-Room","XERGY 10 cm 3D Rechargeable Moon Lamp with Touch Control Adjust Brightness with Wooden"]
     
-    var ProPrice = ["$100","$120","$99","$199","$209","$90","$159","$160","$180"]
+    var ProPrice = [100,120,99,199,209,90,159,160,180]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        design()
         navigationItem.hidesBackButton = true
     }
     
@@ -43,7 +45,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
             NewProductCell.newProdectImage.image = UIImage(named: Image[indexPath.row])
             NewProductCell.newProdectName.text = ProName[indexPath.row]
-            NewProductCell.newProdectPrice.text = ProPrice[indexPath.row]
+            NewProductCell.newProdectPrice.text = "RS \(ProPrice[indexPath.row])"
             
             return NewProductCell
         }else{
@@ -54,6 +56,24 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             
             return PropularProCell
         }
+    }
+    
+    @IBAction func lampProduct1Action(_ sender: Any) {
+        let outdoorLampNaviagte = storyboard?.instantiateViewController(identifier: "OutdoorProductViewController") as! OutdoorProductViewController
+        
+        navigationController?.pushViewController(outdoorLampNaviagte, animated: true)
+    }
+    
+    @IBAction func lampProduct2Action(_ sender: Any) {
+        let insideLampNavigate = storyboard?.instantiateViewController(withIdentifier: "InsideLampViewController") as! InsideLampViewController
+        
+        navigationController?.pushViewController(insideLampNavigate, animated: true)
+    }
+    
+    @IBAction func lampProduct3Action(_ sender: Any) {
+        let uniqeLampNaviagte = storyboard?.instantiateViewController(identifier: "UniqueLampViewController") as! UniqueLampViewController
+        
+        navigationController?.pushViewController(uniqeLampNaviagte, animated: true)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -66,7 +86,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
 
             seclect.Img = UIImage(named: Image[indexPath.row])!
             seclect.lab1 = ProName[indexPath.row]
-            seclect.lab2 = ProPrice[indexPath.row]
+            seclect.lab2 = (ProPrice[indexPath.row])
 
             self.navigationController?.pushViewController(seclect, animated: true)
         }else{
@@ -78,6 +98,14 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
 
             self.navigationController?.pushViewController(seclect1, animated: true)
         }
+    }
+    
+    
+    
+    func design() {
+        lampProduct1Outlet.layer.cornerRadius = 30
+        lampProduct2Outlet.layer.cornerRadius = 30
+        lampProduct3Outlet.layer.cornerRadius = 30
     }
 }
 

@@ -18,11 +18,11 @@ class StartViewController: UIViewController {
         design()
         DBHelper.createFile()
         navigationItem.hidesBackButton = true
+        
     }
     
     func design() {
         regisrationButtonOutlet.layer.cornerRadius = 8
-        
         
         loginButtonOutlet.layer.cornerRadius = 8
         loginButtonOutlet.layer.borderWidth = 2

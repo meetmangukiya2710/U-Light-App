@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
     
     var array = [UserData]()
     var count = 0
-
+    
     @IBOutlet weak var emailOutlet: UITextField!
     @IBOutlet weak var passwordOutlet: UITextField!
     @IBOutlet weak var fstLabelOutlet: UIImageView!
@@ -28,6 +28,8 @@ class LoginViewController: UIViewController {
         navigationItem.hidesBackButton = true
         passwordOutlet.isSecureTextEntry = true
         
+        
+        
     }
     
     
@@ -36,7 +38,7 @@ class LoginViewController: UIViewController {
         array = DBHelper.userDataArray
         var userFound = false
         for i in array {
-        
+            
             if emailOutlet.text == i.email && passwordOutlet.text == i.password {
                 userFound = true
                 print("true")
@@ -53,15 +55,24 @@ class LoginViewController: UIViewController {
     
     func navigate() {
         let naviagte = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
-        
+        //        UserDefaults.standard.set(true, forKey: "Login")
         navigationController?.pushViewController(naviagte, animated: true)
+        
+        //        if UserDefaults.standard.bool(forKey: "Login") == true {
+        //            let vc = self.storyboard?.instantiateViewController(identifier: "ViewController")
+        //            self.navigationController?.pushViewController(vc!, animated: false)
+        //        }
     }
     
     func alert(title: String,message: String){
         let a = UIAlertController(title: title, message: message, preferredStyle: .alert)
         a.addAction(UIAlertAction(title: "Ok", style: .cancel))
         a.addAction(UIAlertAction(title: "Cancel", style: .destructive))
-        present(a, animated: true)
+        
+        self.present(a, animated: true, completion: {
+            a.view.superview?.isUserInteractionEnabled = true
+            a.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTapOutside)))
+        })
     }
     
     func registertion(){
@@ -71,7 +82,15 @@ class LoginViewController: UIViewController {
             
             self.navigationController?.pushViewController(navigate, animated: true)
         }))
-        present(a, animated: true)
+        a.addAction(UIAlertAction(title: "Cancel", style: .destructive))
+        present(a, animated: true, completion: {
+            a.view.superview?.isUserInteractionEnabled = true
+            a.view.superview?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissOnTapOutside)))
+        })
+    }
+    
+    @objc func dismissOnTapOutside(){
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func backButtonAction(_ sender: Any) {

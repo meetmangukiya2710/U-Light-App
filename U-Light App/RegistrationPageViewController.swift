@@ -114,7 +114,6 @@ class RegistrationPageViewController: UIViewController {
         backButtonOutlet.layer.cornerRadius = 12
         backButtonOutlet.layer.borderWidth = 1
         backButtonOutlet.layer.borderColor = UIColor(.gray).cgColor
-        
     }
     
    
