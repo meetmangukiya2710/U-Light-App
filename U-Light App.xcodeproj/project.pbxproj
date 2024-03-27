@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2053932BB3E25600D1BF98 /* InsideLampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2053922BB3E25600D1BF98 /* InsideLampViewController.swift */; };
+		BA2053952BB3E27D00D1BF98 /* UniqueLampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2053942BB3E27D00D1BF98 /* UniqueLampViewController.swift */; };
+		BA2053972BB3E2A200D1BF98 /* UniqueLampProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2053962BB3E2A200D1BF98 /* UniqueLampProductTableViewCell.swift */; };
+		BA2053992BB3E2EC00D1BF98 /* InsideLampProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2053982BB3E2EC00D1BF98 /* InsideLampProductTableViewCell.swift */; };
 		BA63D99F2BA8514300865894 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63D99E2BA8514300865894 /* StartViewController.swift */; };
 		BA63D9A12BA8555900865894 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63D9A02BA8555900865894 /* RegistrationPageViewController.swift */; };
 		BA63D9A32BA859EB00865894 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63D9A22BA859EB00865894 /* DBHelper.swift */; };
@@ -20,7 +24,8 @@
 		BAACE9EE2B3AA5DB000B3823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAACE9ED2B3AA5DB000B3823 /* Assets.xcassets */; };
 		BAACE9F12B3AA5DB000B3823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAACE9EF2B3AA5DB000B3823 /* LaunchScreen.storyboard */; };
 		BAACE9F92B3AAD8C000B3823 /* NewProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAACE9F82B3AAD8B000B3823 /* NewProductCollectionViewCell.swift */; };
-		BAD7EAC02BAD48C200253F7A /* PropularProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7EABF2BAD48C200253F7A /* PropularProductCollectionViewCell.swift */; };
+		BADC21952BB3D7A2007367CE /* OutdoorProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC21942BB3D7A2007367CE /* OutdoorProductViewController.swift */; };
+		BADC21972BB3D88A007367CE /* OutdoorProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC21962BB3D88A007367CE /* OutdoorProductTableViewCell.swift */; };
 		BAE2C3112BAC1DB400C58259 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2C3102BAC1DB400C58259 /* ForgotPasswordViewController.swift */; };
 		BAE2C3132BAC1DE500C58259 /* CreateNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2C3122BAC1DE500C58259 /* CreateNewPasswordViewController.swift */; };
 		BAEE90612B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE90602B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift */; };
@@ -28,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA2053922BB3E25600D1BF98 /* InsideLampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideLampViewController.swift; sourceTree = "<group>"; };
+		BA2053942BB3E27D00D1BF98 /* UniqueLampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueLampViewController.swift; sourceTree = "<group>"; };
+		BA2053962BB3E2A200D1BF98 /* UniqueLampProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueLampProductTableViewCell.swift; sourceTree = "<group>"; };
+		BA2053982BB3E2EC00D1BF98 /* InsideLampProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideLampProductTableViewCell.swift; sourceTree = "<group>"; };
 		BA63D99E2BA8514300865894 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		BA63D9A02BA8555900865894 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
 		BA63D9A22BA859EB00865894 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
@@ -43,7 +52,8 @@
 		BAACE9F02B3AA5DB000B3823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAACE9F22B3AA5DB000B3823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAACE9F82B3AAD8B000B3823 /* NewProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductCollectionViewCell.swift; sourceTree = "<group>"; };
-		BAD7EABF2BAD48C200253F7A /* PropularProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropularProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		BADC21942BB3D7A2007367CE /* OutdoorProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorProductViewController.swift; sourceTree = "<group>"; };
+		BADC21962BB3D88A007367CE /* OutdoorProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorProductTableViewCell.swift; sourceTree = "<group>"; };
 		BAE2C3102BAC1DB400C58259 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		BAE2C3122BAC1DE500C58259 /* CreateNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordViewController.swift; sourceTree = "<group>"; };
 		BAEE90602B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulerProductCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -61,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA3854A22BB4329B00EDCBAF /* DBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BA63D9A22BA859EB00865894 /* DBHelper.swift */,
+			);
+			path = DBHelper;
+			sourceTree = "<group>";
+		};
 		BAACE9D82B3AA5DA000B3823 = {
 			isa = PBXGroup;
 			children = (
@@ -82,20 +100,25 @@
 			children = (
 				BAACE9E42B3AA5DA000B3823 /* AppDelegate.swift */,
 				BAACE9E62B3AA5DA000B3823 /* SceneDelegate.swift */,
+				BA3854A22BB4329B00EDCBAF /* DBHelper */,
+				BAACE9EA2B3AA5DA000B3823 /* Main.storyboard */,
 				BAACE9E82B3AA5DA000B3823 /* ViewController.swift */,
-				BAEE90602B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift */,
+				BADC21942BB3D7A2007367CE /* OutdoorProductViewController.swift */,
 				BA95D9C92B3D554A00B7F60A /* PropularProsuctViewController.swift */,
 				BA95D9C72B3D515E00B7F60A /* NewProductViewController.swift */,
-				BAD7EABF2BAD48C200253F7A /* PropularProductCollectionViewCell.swift */,
+				BA2053922BB3E25600D1BF98 /* InsideLampViewController.swift */,
 				BAEE90622B3C093E0091FE1B /* ProDetailViewController.swift */,
 				BA63D9A02BA8555900865894 /* RegistrationPageViewController.swift */,
-				BAACE9F82B3AAD8B000B3823 /* NewProductCollectionViewCell.swift */,
-				BA63D9A22BA859EB00865894 /* DBHelper.swift */,
 				BA63D99E2BA8514300865894 /* StartViewController.swift */,
-				BAACE9EA2B3AA5DA000B3823 /* Main.storyboard */,
+				BA2053942BB3E27D00D1BF98 /* UniqueLampViewController.swift */,
 				BAE2C3102BAC1DB400C58259 /* ForgotPasswordViewController.swift */,
 				BAE2C3122BAC1DE500C58259 /* CreateNewPasswordViewController.swift */,
 				BA95D9C52B3D4F1700B7F60A /* LoginViewController.swift */,
+				BAEE90602B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift */,
+				BAACE9F82B3AAD8B000B3823 /* NewProductCollectionViewCell.swift */,
+				BADC21962BB3D88A007367CE /* OutdoorProductTableViewCell.swift */,
+				BA2053982BB3E2EC00D1BF98 /* InsideLampProductTableViewCell.swift */,
+				BA2053962BB3E2A200D1BF98 /* UniqueLampProductTableViewCell.swift */,
 				BAACE9ED2B3AA5DB000B3823 /* Assets.xcassets */,
 				BAACE9EF2B3AA5DB000B3823 /* LaunchScreen.storyboard */,
 				BAACE9F22B3AA5DB000B3823 /* Info.plist */,
@@ -174,8 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2053972BB3E2A200D1BF98 /* UniqueLampProductTableViewCell.swift in Sources */,
+				BA2053952BB3E27D00D1BF98 /* UniqueLampViewController.swift in Sources */,
 				BA95D9C62B3D4F1700B7F60A /* LoginViewController.swift in Sources */,
 				BA95D9CA2B3D554A00B7F60A /* PropularProsuctViewController.swift in Sources */,
+				BA2053992BB3E2EC00D1BF98 /* InsideLampProductTableViewCell.swift in Sources */,
 				BAACE9E92B3AA5DA000B3823 /* ViewController.swift in Sources */,
 				BAACE9E52B3AA5DA000B3823 /* AppDelegate.swift in Sources */,
 				BA95D9C82B3D515E00B7F60A /* NewProductViewController.swift in Sources */,
@@ -183,10 +209,12 @@
 				BAACE9E72B3AA5DA000B3823 /* SceneDelegate.swift in Sources */,
 				BA63D9A32BA859EB00865894 /* DBHelper.swift in Sources */,
 				BA63D9A12BA8555900865894 /* RegistrationPageViewController.swift in Sources */,
-				BAD7EAC02BAD48C200253F7A /* PropularProductCollectionViewCell.swift in Sources */,
+				BA2053932BB3E25600D1BF98 /* InsideLampViewController.swift in Sources */,
 				BAACE9F92B3AAD8C000B3823 /* NewProductCollectionViewCell.swift in Sources */,
 				BAE2C3112BAC1DB400C58259 /* ForgotPasswordViewController.swift in Sources */,
 				BAEE90612B3C082B0091FE1B /* PopulerProductCollectionViewCell.swift in Sources */,
+				BADC21952BB3D7A2007367CE /* OutdoorProductViewController.swift in Sources */,
+				BADC21972BB3D88A007367CE /* OutdoorProductTableViewCell.swift in Sources */,
 				BAE2C3132BAC1DE500C58259 /* CreateNewPasswordViewController.swift in Sources */,
 				BAEE90632B3C093E0091FE1B /* ProDetailViewController.swift in Sources */,
 			);
