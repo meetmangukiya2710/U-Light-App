@@ -9,6 +9,7 @@ import UIKit
 
 class OutdoorProductViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
+    var count: Int = 0
     @IBOutlet weak var outdoorProductOutlet: UITableView!
     
     var imageProduct = ["Outdoor Lamp","Outdoor Lamp 1","Outdoor Lamp 2","Outdoor Lamp 3","Outdoor Lamp 4","Outdoor Lamp 5","Outdoor Lamp 6","Outdoor Lamp 7","Outdoor Lamp 8","Outdoor Lamp 9"]

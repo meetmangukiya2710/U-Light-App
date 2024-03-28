@@ -73,6 +73,8 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     @IBAction func lampProduct3Action(_ sender: Any) {
         let uniqeLampNaviagte = storyboard?.instantiateViewController(identifier: "UniqueLampViewController") as! UniqueLampViewController
         
+        
+        
         navigationController?.pushViewController(uniqeLampNaviagte, animated: true)
     }
 
