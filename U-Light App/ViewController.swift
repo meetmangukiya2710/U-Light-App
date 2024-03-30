@@ -42,7 +42,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == NewProductOutlet {
             let NewProductCell = NewProductOutlet.dequeueReusableCell(withReuseIdentifier: "NewProductCell", for: indexPath) as! NewProductCollectionViewCell
-        
+            
             NewProductCell.newProdectImage.image = UIImage(named: Image[indexPath.row])
             NewProductCell.newProdectName.text = ProName[indexPath.row]
             NewProductCell.newProdectPrice.text = "RS \(ProPrice[indexPath.row])"
@@ -73,11 +73,9 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     @IBAction func lampProduct3Action(_ sender: Any) {
         let uniqeLampNaviagte = storyboard?.instantiateViewController(identifier: "UniqueLampViewController") as! UniqueLampViewController
         
-        
-        
         navigationController?.pushViewController(uniqeLampNaviagte, animated: true)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 175, height: 333)
     }
@@ -85,19 +83,18 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == NewProductOutlet{
             let seclect = storyboard?.instantiateViewController(identifier: "NewProductViewController") as! NewProductViewController
-
+            
             seclect.Img = UIImage(named: Image[indexPath.row])!
             seclect.lab1 = ProName[indexPath.row]
-            seclect.lab2 = (ProPrice[indexPath.row])
-
+            seclect.lab2 = ProPrice[indexPath.row]
+            
             self.navigationController?.pushViewController(seclect, animated: true)
         }else{
             let seclect1 = storyboard?.instantiateViewController(identifier: "PropularProsuctViewController") as! PropularProsuctViewController
-
+            
             seclect1.Img1 = UIImage(named: Image1[indexPath.row])!
             seclect1.label1 = ProName2[indexPath.row]
             
-
             self.navigationController?.pushViewController(seclect1, animated: true)
         }
     }

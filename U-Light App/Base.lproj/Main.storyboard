@@ -1012,34 +1012,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-zc-W4c">
-                                <rect key="frame" x="16" y="69" width="41" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="41" id="Y5A-eJ-dch"/>
-                                    <constraint firstAttribute="height" constant="41" id="qJw-R7-mhd"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gv-pH-Iku">
+                                <rect key="frame" x="16" y="74" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Vector (3)" title=""/>
                                 <connections>
-                                    <action selector="backButtonAction:" destination="rE7-Cr-toM" eventType="touchUpInside" id="ZFS-La-Wxz"/>
-                                    <action selector="backButtonAction:" destination="2t0-oH-AGO" eventType="touchUpInside" id="gvl-wU-7h1"/>
-                                    <action selector="backButtonAction:" destination="Sod-tj-YXY" eventType="touchUpInside" id="zB3-8j-GRb"/>
+                                    <action selector="backButtonAction:" destination="Sod-tj-YXY" eventType="touchUpInside" id="1J3-l6-9U3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zxb-uh-s5e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8DG-HA-kbf" firstAttribute="top" secondItem="Fgb-zc-W4c" secondAttribute="bottom" constant="50" id="10k-kn-N2b"/>
-                            <constraint firstItem="Fgb-zc-W4c" firstAttribute="leading" secondItem="zxb-uh-s5e" secondAttribute="leading" constant="16" id="150-6G-knX"/>
+                            <constraint firstItem="zxb-uh-s5e" firstAttribute="bottom" secondItem="un9-a3-GwM" secondAttribute="bottom" constant="252" id="M6t-ym-qKt"/>
                             <constraint firstItem="un9-a3-GwM" firstAttribute="top" secondItem="8DG-HA-kbf" secondAttribute="bottom" constant="24" id="SOd-3F-fAA"/>
                             <constraint firstItem="8DG-HA-kbf" firstAttribute="centerX" secondItem="RAA-qx-Gzj" secondAttribute="centerX" id="eRO-fh-ZqK"/>
                             <constraint firstItem="un9-a3-GwM" firstAttribute="centerX" secondItem="RAA-qx-Gzj" secondAttribute="centerX" id="j4J-Hv-EcG"/>
-                            <constraint firstItem="Fgb-zc-W4c" firstAttribute="top" secondItem="zxb-uh-s5e" secondAttribute="top" constant="10" id="joV-rx-n4M"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButtonOutlet" destination="Fgb-zc-W4c" id="m7w-zl-VJA"/>
+                        <outlet property="backButtonOutlet" destination="0Gv-pH-Iku" id="EEB-tX-uWz"/>
                         <outlet property="propularProduct_Image" destination="8DG-HA-kbf" id="Dzy-Qk-uvl"/>
                         <outlet property="propularProduct_Name" destination="un9-a3-GwM" id="eNZ-x7-HEg"/>
                     </connections>
@@ -1056,9 +1049,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="srK-wh-meD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="srK-wh-meD">
                                 <rect key="frame" x="0.0" y="130" width="393" height="722"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="162" id="RGZ-3P-Mkc" customClass="OutdoorProductTableViewCell" customModule="U_Light_App" customModuleProvider="target">
@@ -1084,11 +1076,32 @@
                                     <outlet property="delegate" destination="aou-RU-II0" id="9Oo-rt-JF1"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-zc-W4c">
+                                <rect key="frame" x="16" y="81" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="2wl-cK-1LA"/>
+                                    <constraint firstAttribute="width" constant="41" id="tso-qw-MgJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector (3)" title=""/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="aou-RU-II0" eventType="touchUpInside" id="cBb-Rw-cPs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q7k-ON-nMJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="srK-wh-meD" secondAttribute="bottom" id="N20-jF-bvm"/>
+                            <constraint firstItem="Fgb-zc-W4c" firstAttribute="leading" secondItem="q7k-ON-nMJ" secondAttribute="leading" constant="16" id="cPz-MO-aTh"/>
+                            <constraint firstItem="srK-wh-meD" firstAttribute="trailing" secondItem="q7k-ON-nMJ" secondAttribute="trailing" id="gsa-Ms-RWj"/>
+                            <constraint firstItem="srK-wh-meD" firstAttribute="top" secondItem="q7k-ON-nMJ" secondAttribute="top" constant="71" id="jEN-mf-xho"/>
+                            <constraint firstItem="Fgb-zc-W4c" firstAttribute="top" secondItem="q7k-ON-nMJ" secondAttribute="top" constant="22" id="osK-9g-3cg"/>
+                            <constraint firstItem="srK-wh-meD" firstAttribute="leading" secondItem="q7k-ON-nMJ" secondAttribute="leading" id="uDV-qu-DyS"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButtonOutlet" destination="Fgb-zc-W4c" id="7U6-Ow-9My"/>
                         <outlet property="outdoorProductOutlet" destination="srK-wh-meD" id="szo-te-Ak2"/>
                     </connections>
                 </viewController>
@@ -1132,11 +1145,28 @@
                                     <outlet property="delegate" destination="AOu-i4-vDh" id="9CA-hk-buA"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg9-I6-hYq">
+                                <rect key="frame" x="16" y="81" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Wl0-Sy-YWj"/>
+                                    <constraint firstAttribute="width" constant="41" id="jSV-L1-sim"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector (3)" title=""/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="AOu-i4-vDh" eventType="touchUpInside" id="pDZ-yS-hT0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GIE-8F-BX1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bg9-I6-hYq" firstAttribute="leading" secondItem="GIE-8F-BX1" secondAttribute="leading" constant="16" id="2gN-qZ-B10"/>
+                            <constraint firstItem="Bg9-I6-hYq" firstAttribute="top" secondItem="GIE-8F-BX1" secondAttribute="top" constant="22" id="lAU-Se-1YK"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButtonOutlet" destination="Bg9-I6-hYq" id="8wu-Js-3R3"/>
                         <outlet property="insideLampOutlet" destination="lE0-5x-3wp" id="DVD-X2-dV4"/>
                     </connections>
                 </viewController>
@@ -1180,6 +1210,15 @@
                                     <outlet property="delegate" destination="qqj-Nd-fbX" id="DDT-iD-nyB"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wn-7Q-T83">
+                                <rect key="frame" x="16" y="81" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Vector (3)" title=""/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="qqj-Nd-fbX" eventType="touchUpInside" id="az9-Ks-eXG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F8w-9y-biu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

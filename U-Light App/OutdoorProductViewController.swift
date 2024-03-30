@@ -9,14 +9,15 @@ import UIKit
 
 class OutdoorProductViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    var count: Int = 0
     @IBOutlet weak var outdoorProductOutlet: UITableView!
+    @IBOutlet weak var backButtonOutlet: UIButton!
     
     var imageProduct = ["Outdoor Lamp","Outdoor Lamp 1","Outdoor Lamp 2","Outdoor Lamp 3","Outdoor Lamp 4","Outdoor Lamp 5","Outdoor Lamp 6","Outdoor Lamp 7","Outdoor Lamp 8","Outdoor Lamp 9"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.hidesBackButton = true
+        design()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,6 +34,22 @@ class OutdoorProductViewController: UIViewController,UITableViewDataSource,UITab
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 162
+    }
+    
+    @IBAction func backButtonAction(_ sender: Any) {
+        let navigat = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func design() {
+        backButtonOutlet.layer.cornerRadius = 12
+        backButtonOutlet.layer.borderWidth = 1
+        backButtonOutlet.layer.borderColor = UIColor(.gray).cgColor
     }
     
 }

@@ -10,12 +10,14 @@ import UIKit
 class InsideLampViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var insideLampOutlet: UITableView!
+    @IBOutlet weak var backButtonOutlet: UIButton!
     
     var array = ["Inside Lamp","Inside Lamp 1","Inside Lamp 2","Inside Lamp 3","Inside Lamp 4","Inside Lamp 5","Inside Lamp 6","Inside Lamp 7","Inside Lamp 8","Inside Lamp 9"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.hidesBackButton = true
+        design()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,6 +34,18 @@ class InsideLampViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 162
+    }
+    
+    @IBAction func backButtonAction(_ sender: Any) {
+        let navigat = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func design() {
+        backButtonOutlet.layer.cornerRadius = 12
+        backButtonOutlet.layer.borderWidth = 1
+        backButtonOutlet.layer.borderColor = UIColor(.gray).cgColor
     }
     
 }
